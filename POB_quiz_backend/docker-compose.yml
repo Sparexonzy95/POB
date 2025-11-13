@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: quiz_api
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      - .:/app           # live reload during dev
+      - django-db:/app/db  # persist SQLite file
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+
+  autosubmit:
+    build: .
+    container_name: quiz_autosubmit
+    env_file: .env
+    volumes:
+      - .:/app
+      - django-db:/app/db
+    restart: always
+    command: python manage.py autosubmit_sessions
+
+  relayer:
+    build: .
+    container_name: quiz_relayer
+    env_file: .env
+    volumes:
+      - .:/app
+      - django-db:/app/db
+    restart: always
+    command: python manage.py process_settlements
+
+volumes:
+  django-db:

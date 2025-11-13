@@ -1,0 +1,42 @@
+/* styles/miniPay.css */
+
+/* Applied when the app detects it's running in MiniPay */
+.minipay-mode {
+  /* Extra bottom padding for MiniPay's navigation bar */
+  padding-bottom: 70px;
+}
+
+/* Larger tap targets for mobile */
+.minipay-mode button, 
+.minipay-mode .button,
+.minipay-mode input[type="number"] {
+  min-height: 44px;
+}
+
+/* Ensure text is readable on small screens */
+@media (max-width: 390px) {
+  .text-xs {
+    font-size: 0.7rem;
+  }
+  
+  .minipay-mode .truncate-address {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Development indicator that shows when running in MiniPay */
+.minipay-indicator {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  background-color: #94C751;
+  color: #101707;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: none;
+}

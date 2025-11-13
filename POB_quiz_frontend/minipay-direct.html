@@ -1,0 +1,174 @@
+<!-- minipay-direct.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MiniPay Direct</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; }
+        button { background: #587E28; color: white; border: none; padding: 10px 15px; border-radius: 8px; font-weight: bold; }
+        .card { border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin-bottom: 15px; }
+        .error { color: red; font-size: 14px; margin-top: 10px; }
+        .success { color: green; font-size: 14px; margin-top: 10px; }
+        .info { color: blue; font-size: 14px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>MiniPay Direct Transaction</h1>
+    
+    <div class="card">
+        <h3>Buy Credits</h3>
+        <p>Purchase credits using cUSD tokens</p>
+        <button id="buyButton">Buy Credits</button>
+        <div id="statusMessage"></div>
+    </div>
+    
+    <div class="card">
+        <h3>Check Credits</h3>
+        <button id="checkButton">Check Credits</button>
+        <div id="creditStatus"></div>
+    </div>
+    
+    <script>
+        // Constants
+        const QUIZ_ADDRESS = '0x23E8497808fca83646456e9B80885267864cb0a2'; // Replace with your contract address
+        const CUSD_ADDRESS = '0x765DE816845861e75A25fCA122bb6898B8B1282a'; // cUSD token on Celo
+        const API_URL = 'http://localhost:8000/api'; // Replace with your API URL
+        
+        // Get elements
+        const buyButton = document.getElementById('buyButton');
+        const checkButton = document.getElementById('checkButton');
+        const statusMessage = document.getElementById('statusMessage');
+        const creditStatus = document.getElementById('creditStatus');
+        
+        // Function to show messages
+        function showStatus(element, message, type) {
+            element.innerHTML = `<div class="${type}">${message}</div>`;
+        }
+        
+        // Buy credits function
+        async function buyCredits() {
+            // Reset status
+            showStatus(statusMessage, "Starting transaction...", "info");
+            
+            try {
+                // 1. Get the wallet provider
+                const ethereum = window.ethereum;
+                if (!ethereum) {
+                    throw new Error('No wallet provider found');
+                }
+                
+                // 2. Check if we're connected
+                const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                if (!accounts || accounts.length === 0) {
+                    throw new Error('Please connect your wallet first');
+                }
+                const address = accounts[0];
+                
+                // 3. Check network
+                const chainId = await ethereum.request({ method: 'eth_chainId' });
+                if (chainId !== '0xa4ec' && chainId !== '42220') {
+                    throw new Error('Please switch to Celo network first');
+                }
+                
+                // 4. Send approve transaction
+                showStatus(statusMessage, "Sending approval transaction...", "info");
+                
+                // Function signatures and parameters
+                const APPROVE_SIGNATURE = '0x095ea7b3';  // approve(address,uint256)
+                const PAY_FEE_SIGNATURE = '0xbe85533d';  // payEntryFee()
+                const LARGE_APPROVAL = '0x152d02c7e14af6800000'; // A large number in hex
+                
+                // Prepare approval data
+                const approveData = APPROVE_SIGNATURE + 
+                                  QUIZ_ADDRESS.slice(2).padStart(64, '0') + 
+                                  LARGE_APPROVAL.slice(2).padStart(64, '0');
+                
+                // Send approval
+                const approveHash = await ethereum.request({
+                    method: 'eth_sendTransaction',
+                    params: [{
+                        from: address,
+                        to: CUSD_ADDRESS,
+                        data: approveData
+                    }]
+                });
+                
+                showStatus(statusMessage, `Approval sent! Waiting for confirmation...<br>Hash: ${approveHash}`, "info");
+                
+                // 5. Wait for approval to be processed
+                await new Promise(resolve => setTimeout(resolve, 15000));
+                
+                // 6. Send payment transaction
+                showStatus(statusMessage, "Sending payment transaction...", "info");
+                
+                const paymentHash = await ethereum.request({
+                    method: 'eth_sendTransaction',
+                    params: [{
+                        from: address,
+                        to: QUIZ_ADDRESS,
+                        data: PAY_FEE_SIGNATURE
+                    }]
+                });
+                
+                showStatus(statusMessage, `Payment sent! Waiting for confirmation...<br>Hash: ${paymentHash}`, "info");
+                
+                // 7. Wait for payment to be processed
+                await new Promise(resolve => setTimeout(resolve, 5000));
+                
+                // 8. Show success and check credits
+                showStatus(statusMessage, "Transaction successful! Checking credits...", "success");
+                checkCredits(address);
+                
+            } catch (error) {
+                console.error("Transaction error:", error);
+                showStatus(statusMessage, `Error: ${error.message || "Unknown error"}`, "error");
+            }
+        }
+        
+        // Check credits function
+        async function checkCredits(walletAddress) {
+            try {
+                // Get address if not provided
+                let address = walletAddress;
+                if (!address) {
+                    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    address = accounts[0];
+                }
+                
+                showStatus(creditStatus, "Checking credits...", "info");
+                
+                // Add timestamp to bust cache
+                const timestamp = Date.now();
+                const url = `${API_URL}/quiz/user/?address=${address}&_t=${timestamp}`;
+                
+                const response = await fetch(url, {
+                    method: "GET",
+                    headers: {
+                        "Cache-Control": "no-cache, no-store, must-revalidate",
+                        "Pragma": "no-cache",
+                        "Expires": "0",
+                        "X-Addr": address
+                    },
+                    cache: 'no-store'
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                showStatus(creditStatus, `You have ${data.credits} credits!`, "success");
+                
+            } catch (error) {
+                console.error("Credit check error:", error);
+                showStatus(creditStatus, `Error checking credits: ${error.message || "Unknown error"}`, "error");
+            }
+        }
+        
+        // Add event listeners
+        buyButton.addEventListener('click', buyCredits);
+        checkButton.addEventListener('click', () => checkCredits());
+    </script>
+</body>
+</html>

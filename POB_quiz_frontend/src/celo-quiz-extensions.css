@@ -1,0 +1,164 @@
+/* src/celo-quiz-extensions.css */
+
+/* Additional animations for quiz interactions */
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 5px rgba(148, 199, 81, 0.5);
+  }
+  50% { 
+    box-shadow: 0 0 20px rgba(148, 199, 81, 0.9);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+  background-image: linear-gradient(90deg, 
+    rgba(38, 55, 17, 0.1) 0%, 
+    rgba(148, 199, 81, 0.2) 25%,
+    rgba(38, 55, 17, 0.1) 50%
+  );
+}
+
+/* Enhanced transitions for components */
+.transition-all-fast {
+  transition: all 0.2s ease;
+}
+
+.transition-all-medium {
+  transition: all 0.4s ease;
+}
+
+.transition-all-slow {
+  transition: all 0.8s ease;
+}
+
+/* Enhanced quiz option interactions */
+.option-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.option-hover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(148, 199, 81, 0.3) 0%, rgba(0,0,0,0) 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.option-hover:hover:after {
+  opacity: 1;
+}
+
+/* Improved timer styles */
+.timer-warning {
+  color: #ffd166;
+  animation: pulse 1s infinite alternate;
+}
+
+.timer-critical {
+  color: #ff6b6b;
+  animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Celebration effects */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #94C751;
+  border-radius: 50%;
+  animation: fall 3s ease-in-out;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Card and button enhancements */
+.shadow-green-glow {
+  box-shadow: 0 0 15px rgba(148, 199, 81, 0.4);
+}
+
+.shadow-hover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Green theme UI elements */
+.btn-primary {
+  @apply px-4 py-2 rounded-xl border border-[#94C751] text-[#101707] bg-[#94C751] hover:bg-[#C9E3A8] transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 rounded-xl border border-secondary/60 text-highlight hover:bg-secondary/40 transition-all duration-300;
+}
+
+.btn-danger {
+  @apply px-4 py-2 rounded-xl border border-[#ff6b6b] text-[#101707] bg-[#ff6b6b] hover:bg-[#ff8e8e] transition-all duration-300;
+}
+
+/* Better toast notifications */
+.toast-enter {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.toast-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.toast-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-exit-active {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}

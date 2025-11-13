@@ -1,0 +1,1601 @@
+[
+  {
+    "model": "chain.Question",
+    "pk": 1,
+    "fields": {
+      "text": "What is the native cryptocurrency of the Ethereum network?",
+      "category": "Blockchain Basics",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Ether (ETH) is the native token used for transaction fees and as a store of value on Ethereum."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 1,
+    "fields": { "question": 1, "text": "Bitcoin", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 2,
+    "fields": { "question": 1, "text": "Ether", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 3,
+    "fields": { "question": 1, "text": "Solana", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 4,
+    "fields": { "question": 1, "text": "Cardano", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 2,
+    "fields": {
+      "text": "Which consensus algorithm does Ethereum use after The Merge?",
+      "category": "Blockchain Basics",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "The Merge (Sep 2022) transitioned Ethereum from Proof-of-Work to Proof-of-Stake."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 5,
+    "fields": { "question": 2, "text": "Proof of Work", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 6,
+    "fields": { "question": 2, "text": "Proof of Stake", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 7,
+    "fields": { "question": 2, "text": "Delegated Proof of Stake", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 8,
+    "fields": { "question": 2, "text": "Proof of Authority", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 3,
+    "fields": {
+      "text": "What is the maximum supply of Bitcoin?",
+      "category": "Cryptocurrency",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Bitcoin’s protocol caps the total supply at 21 million coins."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 9,
+    "fields": { "question": 3, "text": "18 million", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 10,
+    "fields": { "question": 3, "text": "21 million", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 11,
+    "fields": { "question": 3, "text": "24 million", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 12,
+    "fields": { "question": 3, "text": "Unlimited", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 4,
+    "fields": {
+      "text": "What does 'gas' refer to on Ethereum?",
+      "category": "Ethereum",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Gas measures computational effort; users pay gas fees in ETH."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 13,
+    "fields": { "question": 4, "text": "A token standard", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 14,
+    "fields": { "question": 4, "text": "Computational cost", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 15,
+    "fields": { "question": 4, "text": "A layer-2 solution", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 16,
+    "fields": { "question": 4, "text": "A governance token", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 5,
+    "fields": {
+      "text": "Which is a layer-2 scaling solution for Ethereum?",
+      "category": "Scaling",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Optimism uses optimistic rollups to batch transactions off-chain."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 17,
+    "fields": { "question": 5, "text": "Polygon", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 18,
+    "fields": { "question": 5, "text": "Optimism", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 19,
+    "fields": { "question": 5, "text": "Solana", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 20,
+    "fields": { "question": 5, "text": "Cardano", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 6,
+    "fields": {
+      "text": "What is a smart contract?",
+      "category": "Smart Contracts",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Self-executing code on blockchain that enforces terms automatically."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 21,
+    "fields": { "question": 6, "text": "A legal document", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 22,
+    "fields": { "question": 6, "text": "Self-executing code on blockchain", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 23,
+    "fields": { "question": 6, "text": "A mining algorithm", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 24,
+    "fields": { "question": 6, "text": "A type of wallet", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 7,
+    "fields": {
+      "text": "Which language is most used for Ethereum smart contracts?",
+      "category": "Smart Contracts",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Solidity is the dominant language for Ethereum dApps."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 25,
+    "fields": { "question": 7, "text": "JavaScript", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 26,
+    "fields": { "question": 7, "text": "Solidity", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 27,
+    "fields": { "question": 7, "text": "Python", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 28,
+    "fields": { "question": 7, "text": "Rust", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 8,
+    "fields": {
+      "text": "What does DeFi stand for?",
+      "category": "DeFi",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Decentralized Finance (DeFi) enables financial services without banks."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 29,
+    "fields": { "question": 8, "text": "Decentralized Finance", "is_correct": true, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 30,
+    "fields": { "question": 8, "text": "Digital Funds", "is_correct": false, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 31,
+    "fields": { "question": 8, "text": "Distributed Finance", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 32,
+    "fields": { "question": 8, "text": "Decentralized File", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 9,
+    "fields": {
+      "text": "Which stablecoin is pegged 1:1 to USD and issued by Circle?",
+      "category": "DeFi",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "USDC is backed by USD reserves and audited regularly."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 33,
+    "fields": { "question": 9, "text": "DAI", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 34,
+    "fields": { "question": 9, "text": "USDC", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 35,
+    "fields": { "question": 9, "text": "AAVE", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 36,
+    "fields": { "question": 9, "text": "UNI", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 10,
+    "fields": {
+      "text": "What is the purpose of a nonce in a transaction?",
+      "category": "Blockchain Basics",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Prevents replay attacks by ensuring transaction order."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 37,
+    "fields": { "question": 10, "text": "Transaction fee", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 38,
+    "fields": { "question": 10, "text": "Sequential transaction counter", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 39,
+    "fields": { "question": 10, "text": "Hash of the block", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 40,
+    "fields": { "question": 10, "text": "Public key", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 11,
+    "fields": {
+      "text": "Who created Bitcoin?",
+      "category": "Cryptocurrency",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Satoshi Nakamoto is the pseudonym of Bitcoin's inventor."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 41,
+    "fields": { "question": 11, "text": "Vitalik Buterin", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 42,
+    "fields": { "question": 11, "text": "Satoshi Nakamoto", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 43,
+    "fields": { "question": 11, "text": "Charlie Lee", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 44,
+    "fields": { "question": 11, "text": "Gavin Wood", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 12,
+    "fields": {
+      "text": "What is a 51% attack?",
+      "category": "Security",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "An attacker controls >50% of network hash power and can double-spend."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 45,
+    "fields": { "question": 12, "text": "Controlling over 50% of nodes", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 46,
+    "fields": { "question": 12, "text": "Controlling over 50% of hash power", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 47,
+    "fields": { "question": 12, "text": "Hacking a wallet", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 48,
+    "fields": { "question": 12, "text": "Phishing attack", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 13,
+    "fields": {
+      "text": "What is the block time of Bitcoin?",
+      "category": "Cryptocurrency",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Bitcoin targets 10 minutes per block."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 49,
+    "fields": { "question": 13, "text": "1 minute", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 50,
+    "fields": { "question": 13, "text": "10 minutes", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 51,
+    "fields": { "question": 13, "text": "15 minutes", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 52,
+    "fields": { "question": 13, "text": "30 seconds", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 14,
+    "fields": {
+      "text": "Which token standard is used for fungible tokens on Ethereum?",
+      "category": "Ethereum",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "ERC-20 defines the standard interface for fungible tokens."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 53,
+    "fields": { "question": 14, "text": "ERC-721", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 54,
+    "fields": { "question": 14, "text": "ERC-20", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 55,
+    "fields": { "question": 14, "text": "ERC-1155", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 56,
+    "fields": { "question": 14, "text": "ERC-777", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 15,
+    "fields": {
+      "text": "What is sharding in blockchain?",
+      "category": "Scaling",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Sharding splits the blockchain into smaller parallel chains to increase throughput."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 57,
+    "fields": { "question": 15, "text": "Encrypting data", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 58,
+    "fields": { "question": 15, "text": "Splitting the chain into parallel parts", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 59,
+    "fields": { "question": 15, "text": "Compressing blocks", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 60,
+    "fields": { "question": 15, "text": "Using layer-2", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 16,
+    "fields": {
+      "text": "Which blockchain uses Proof of History?",
+      "category": "Layer 1",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Solana uses PoH to order events without full consensus on time."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 61,
+    "fields": { "question": 16, "text": "Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 62,
+    "fields": { "question": 16, "text": "Solana", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 63,
+    "fields": { "question": 16, "text": "Cardano", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 64,
+    "fields": { "question": 16, "text": "Polkadot", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 17,
+    "fields": {
+      "text": "What is a private key used for?",
+      "category": "Security",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Private key signs transactions to prove ownership."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 65,
+    "fields": { "question": 17, "text": "Encrypting messages", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 66,
+    "fields": { "question": 17, "text": "Signing transactions", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 67,
+    "fields": { "question": 17, "text": "Generating public keys", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 68,
+    "fields": { "question": 17, "text": "Storing ETH", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 18,
+    "fields": {
+      "text": "Which is NOT a layer-1 blockchain?",
+      "category": "Layer 1",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Arbitrum is a layer-2 rollup on Ethereum."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 69,
+    "fields": { "question": 18, "text": "Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 70,
+    "fields": { "question": 18, "text": "Arbitrum", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 71,
+    "fields": { "question": 18, "text": "Binance Smart Chain", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 72,
+    "fields": { "question": 18, "text": "Avalanche", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 19,
+    "fields": {
+      "text": "What is a DAO?",
+      "category": "Governance",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Decentralized Autonomous Organization governed by smart contracts and token votes."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 73,
+    "fields": { "question": 19, "text": "A type of wallet", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 74,
+    "fields": { "question": 19, "text": "Decentralized Autonomous Organization", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 75,
+    "fields": { "question": 19, "text": "A mining pool", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 76,
+    "fields": { "question": 19, "text": "A stablecoin", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 20,
+    "fields": {
+      "text": "Which protocol enables cross-chain communication?",
+      "category": "Interoperability",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Polkadot connects multiple blockchains via parachains."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 77,
+    "fields": { "question": 20, "text": "Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 78,
+    "fields": { "question": 20, "text": "Polkadot", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 79,
+    "fields": { "question": 20, "text": "Uniswap", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 80,
+    "fields": { "question": 20, "text": "Aave", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 21,
+    "fields": {
+      "text": "What is the halving event in Bitcoin?",
+      "category": "Cryptocurrency",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Every 210,000 blocks (~4 years), block reward is cut in half."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 81,
+    "fields": { "question": 21, "text": "Block size increase", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 82,
+    "fields": { "question": 21, "text": "Block reward reduced by 50%", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 83,
+    "fields": { "question": 21, "text": "Network upgrade", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 84,
+    "fields": { "question": 21, "text": "New token launch", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 22,
+    "fields": {
+      "text": "Which is a zero-knowledge proof blockchain?",
+      "category": "Privacy",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Zcash uses zk-SNARKs to enable private transactions."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 85,
+    "fields": { "question": 22, "text": "Bitcoin", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 86,
+    "fields": { "question": 22, "text": "Zcash", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 87,
+    "fields": { "question": 22, "text": "Ethereum", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 88,
+    "fields": { "question": 22, "text": "Ripple", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 23,
+    "fields": {
+      "text": "What is MEV?",
+      "category": "Ethereum",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Miner/Maximal Extractable Value — profit from transaction ordering."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 89,
+    "fields": { "question": 23, "text": "Minimum Viable Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 90,
+    "fields": { "question": 23, "text": "Maximal Extractable Value", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 91,
+    "fields": { "question": 23, "text": "Merged Ethereum Value", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 92,
+    "fields": { "question": 23, "text": "Market Exchange Volume", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 24,
+    "fields": {
+      "text": "Which is a lending protocol on Ethereum?",
+      "category": "DeFi",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Aave allows users to lend and borrow crypto assets."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 93,
+    "fields": { "question": 24, "text": "Uniswap", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 94,
+    "fields": { "question": 24, "text": "Aave", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 95,
+    "fields": { "question": 24, "text": "Chainlink", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 96,
+    "fields": { "question": 24, "text": "Curve", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 25,
+    "fields": {
+      "text": "What is a seed phrase?",
+      "category": "Security",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "12–24 word backup to recover a wallet."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 97,
+    "fields": { "question": 25, "text": "A password", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 98,
+    "fields": { "question": 25, "text": "12–24 word wallet backup", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 99,
+    "fields": { "question": 25, "text": "A public key", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 100,
+    "fields": { "question": 25, "text": "A smart contract", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 26,
+    "fields": {
+      "text": "Which blockchain uses Ouroboros consensus?",
+      "category": "Layer 1",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Cardano uses Ouroboros, a Proof-of-Stake protocol."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 101,
+    "fields": { "question": 26, "text": "Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 102,
+    "fields": { "question": 26, "text": "Cardano", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 103,
+    "fields": { "question": 26, "text": "Solana", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 104,
+    "fields": { "question": 26, "text": "Tezos", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 27,
+    "fields": {
+      "text": "What is an oracle in blockchain?",
+      "category": "DeFi",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Oracles feed real-world data (e.g. prices) into smart contracts."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 105,
+    "fields": { "question": 27, "text": "A prediction market", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 106,
+    "fields": { "question": 27, "text": "A data feed for smart contracts", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 107,
+    "fields": { "question": 27, "text": "A governance token", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 108,
+    "fields": { "question": 27, "text": "A wallet", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 28,
+    "fields": {
+      "text": "Which is a decentralized exchange?",
+      "category": "DeFi",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Uniswap is a DEX using automated market makers (AMMs)."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 109,
+    "fields": { "question": 28, "text": "Coinbase", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 110,
+    "fields": { "question": 28, "text": "Uniswap", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 111,
+    "fields": { "question": 28, "text": "Binance", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 112,
+    "fields": { "question": 28, "text": "Kraken", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 29,
+    "fields": {
+      "text": "What is impermanent loss?",
+      "category": "DeFi",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Loss in value when providing liquidity due to price divergence."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 113,
+    "fields": { "question": 29, "text": "Permanent loss of funds", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 114,
+    "fields": { "question": 29, "text": "Loss from price volatility in AMMs", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 115,
+    "fields": { "question": 29, "text": "Hack on exchange", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 116,
+    "fields": { "question": 29, "text": "Gas fee loss", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 30,
+    "fields": {
+      "text": "What does EIP stand for?",
+      "category": "Ethereum",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Ethereum Improvement Proposal — standard for protocol upgrades."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 117,
+    "fields": { "question": 30, "text": "Ethereum Initial Price", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 118,
+    "fields": { "question": 30, "text": "Ethereum Improvement Proposal", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 119,
+    "fields": { "question": 30, "text": "Encrypted Internet Protocol", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 120,
+    "fields": { "question": 30, "text": "Exchange Integration Protocol", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 31,
+    "fields": {
+      "text": "Which is a hardware wallet?",
+      "category": "Security",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Ledger stores private keys offline."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 121,
+    "fields": { "question": 31, "text": "MetaMask", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 122,
+    "fields": { "question": 31, "text": "Ledger", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 123,
+    "fields": { "question": 31, "text": "Trust Wallet", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 124,
+    "fields": { "question": 31, "text": "Coinbase Wallet", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 32,
+    "fields": {
+      "text": "What is a fork in blockchain?",
+      "category": "Blockchain Basics",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "A fork creates two separate chains from a common history."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 125,
+    "fields": { "question": 32, "text": "A network upgrade", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 126,
+    "fields": { "question": 32, "text": "Split into two chains", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 127,
+    "fields": { "question": 32, "text": "A new token", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 128,
+    "fields": { "question": 32, "text": "A wallet backup", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 33,
+    "fields": {
+      "text": "Which blockchain uses Avalanche consensus?",
+      "category": "Layer 1",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Avalanche enables sub-second finality with high throughput."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 129,
+    "fields": { "question": 33, "text": "Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 130,
+    "fields": { "question": 33, "text": "Avalanche", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 131,
+    "fields": { "question": 33, "text": "Polygon", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 132,
+    "fields": { "question": 33, "text": "Fantom", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 34,
+    "fields": {
+      "text": "What is a rug pull?",
+      "category": "Security",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Developers abandon a project and run away with funds."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 133,
+    "fields": { "question": 34, "text": "A type of airdrop", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 134,
+    "fields": { "question": 34, "text": "Developers steal liquidity", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 135,
+    "fields": { "question": 34, "text": "A network upgrade", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 136,
+    "fields": { "question": 34, "text": "A staking reward", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 35,
+    "fields": {
+      "text": "What is the beacon chain?",
+      "category": "Ethereum",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "The beacon chain coordinates Ethereum 2.0 Proof-of-Stake."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 137,
+    "fields": { "question": 35, "text": "A new token", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 138,
+    "fields": { "question": 35, "text": "PoS coordination layer", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 139,
+    "fields": { "question": 35, "text": "A layer-2 chain", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 140,
+    "fields": { "question": 35, "text": "A testnet", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 36,
+    "fields": {
+      "text": "Which is a NFT standard?",
+      "category": "NFTs",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "ERC-721 defines unique, non-fungible tokens."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 141,
+    "fields": { "question": 36, "text": "ERC-20", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 142,
+    "fields": { "question": 36, "text": "ERC-721", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 143,
+    "fields": { "question": 36, "text": "ERC-1155", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 144,
+    "fields": { "question": 36, "text": "ERC-777", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 37,
+    "fields": {
+      "text": "What is flash loan?",
+      "category": "DeFi",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Borrow and repay in same transaction, no collateral."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 145,
+    "fields": { "question": 37, "text": "Long-term loan", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 146,
+    "fields": { "question": 37, "text": "Uncollateralized loan in one tx", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 147,
+    "fields": { "question": 37, "text": "Secured loan", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 148,
+    "fields": { "question": 37, "text": "Credit line", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 38,
+    "fields": {
+      "text": "Which is a sidechain of Ethereum?",
+      "category": "Scaling",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Polygon PoS is a committed sidechain with its own consensus."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 149,
+    "fields": { "question": 38, "text": "Optimism", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 150,
+    "fields": { "question": 38, "text": "Polygon", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 151,
+    "fields": { "question": 38, "text": "Arbitrum", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 152,
+    "fields": { "question": 38, "text": "zkSync", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 39,
+    "fields": {
+      "text": "What is a Merkle tree?",
+      "category": "Blockchain Basics",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Hash tree for efficient and secure verification of large data."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 153,
+    "fields": { "question": 39, "text": "A type of wallet", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 154,
+    "fields": { "question": 39, "text": "Hash tree for data verification", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 155,
+    "fields": { "question": 39, "text": "A consensus algorithm", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 156,
+    "fields": { "question": 39, "text": "A token standard", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 40,
+    "fields": {
+      "text": "Which chain uses Tendermint consensus?",
+      "category": "Layer 1",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Cosmos SDK chains use Tendermint for BFT consensus."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 157,
+    "fields": { "question": 40, "text": "Ethereum", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 158,
+    "fields": { "question": 40, "text": "Cosmos", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 159,
+    "fields": { "question": 40, "text": "Solana", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 160,
+    "fields": { "question": 40, "text": "Polkadot", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 41,
+    "fields": {
+      "text": "What is staking?",
+      "category": "Proof of Stake",
+      "difficulty": "Easy",
+      "is_active": true,
+      "explanation": "Locking tokens to support network and earn rewards."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 161,
+    "fields": { "question": 41, "text": "Mining with GPU", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 162,
+    "fields": { "question": 41, "text": "Locking tokens for rewards", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 163,
+    "fields": { "question": 41, "text": "Trading on DEX", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 164,
+    "fields": { "question": 41, "text": "Running a node", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 42,
+    "fields": {
+      "text": "Which is a rollup type?",
+      "category": "Scaling",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "ZK-Rollups use validity proofs; Optimistic use fraud proofs."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 165,
+    "fields": { "question": 42, "text": "Sidechain", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 166,
+    "fields": { "question": 42, "text": "ZK-Rollup", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 167,
+    "fields": { "question": 42, "text": "State channel", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 168,
+    "fields": { "question": 42, "text": "Plasma", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 43,
+    "fields": {
+      "text": "What is a dust attack?",
+      "category": "Security",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Sending tiny amounts to addresses to de-anonymize users."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 169,
+    "fields": { "question": 43, "text": "DDoS attack", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 170,
+    "fields": { "question": 43, "text": "Sending tiny UTXOs to track users", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 171,
+    "fields": { "question": 43, "text": "Phishing scam", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 172,
+    "fields": { "question": 43, "text": "Smart contract exploit", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 44,
+    "fields": {
+      "text": "Which is a stablecoin algorithmically pegged?",
+      "category": "DeFi",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "DAI maintains $1 via over-collateralization and stability mechanisms."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 173,
+    "fields": { "question": 44, "text": "USDT", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 174,
+    "fields": { "question": 44, "text": "DAI", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 175,
+    "fields": { "question": 44, "text": "USDC", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 176,
+    "fields": { "question": 44, "text": "BUSD", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 45,
+    "fields": {
+      "text": "What is account abstraction?",
+      "category": "Ethereum",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Allows contracts to act as accounts (EIP-4337)."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 177,
+    "fields": { "question": 45, "text": "Abstract art on chain", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 178,
+    "fields": { "question": 45, "text": "Contracts as user accounts", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 179,
+    "fields": { "question": 45, "text": "Gas abstraction", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 180,
+    "fields": { "question": 45, "text": "Token abstraction", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 46,
+    "fields": {
+      "text": "Which chain uses eUTxO model?",
+      "category": "Layer 1",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Cardano uses extended UTXO for better accounting."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 181,
+    "fields": { "question": 46, "text": "Bitcoin", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 182,
+    "fields": { "question": 46, "text": "Cardano", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 183,
+    "fields": { "question": 46, "text": "Ethereum", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 184,
+    "fields": { "question": 46, "text": "Solana", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 47,
+    "fields": {
+      "text": "What is a bridge in blockchain?",
+      "category": "Interoperability",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "Transfers assets between different blockchains."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 185,
+    "fields": { "question": 47, "text": "A type of wallet", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 186,
+    "fields": { "question": 47, "text": "Cross-chain asset transfer", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 187,
+    "fields": { "question": 47, "text": "A DEX", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 188,
+    "fields": { "question": 47, "text": "A consensus mechanism", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 48,
+    "fields": {
+      "text": "Which is a soulbound token (SBT)?",
+      "category": "NFTs",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Non-transferable NFTs representing identity or credentials."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 189,
+    "fields": { "question": 48, "text": "Transferable NFT", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 190,
+    "fields": { "question": 48, "text": "Non-transferable identity token", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 191,
+    "fields": { "question": 48, "text": "Fungible token", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 192,
+    "fields": { "question": 48, "text": "Stablecoin", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 49,
+    "fields": {
+      "text": "What is the Dencun upgrade?",
+      "category": "Ethereum",
+      "difficulty": "Hard",
+      "is_active": true,
+      "explanation": "Introduced proto-danksharding (EIP-4844) for data blobs."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 193,
+    "fields": { "question": 49, "text": "PoS switch", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 194,
+    "fields": { "question": 49, "text": "EIP-4844 for rollup data", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 195,
+    "fields": { "question": 49, "text": "Shanghai upgrade", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 196,
+    "fields": { "question": 49, "text": "London hard fork", "is_correct": false, "order_hint": 3 }
+  },
+
+  {
+    "model": "chain.Question",
+    "pk": 50,
+    "fields": {
+      "text": "What is a validator in PoS?",
+      "category": "Proof of Stake",
+      "difficulty": "Medium",
+      "is_active": true,
+      "explanation": "A node that stakes tokens to propose and attest blocks."
+    }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 197,
+    "fields": { "question": 50, "text": "A miner", "is_correct": false, "order_hint": 0 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 198,
+    "fields": { "question": 50, "text": "Staked node that secures network", "is_correct": true, "order_hint": 1 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 199,
+    "fields": { "question": 50, "text": "A relayer", "is_correct": false, "order_hint": 2 }
+  },
+  {
+    "model": "chain.Option",
+    "pk": 200,
+    "fields": { "question": 50, "text": "A bridge operator", "is_correct": false, "order_hint": 3 }
+  }
+]

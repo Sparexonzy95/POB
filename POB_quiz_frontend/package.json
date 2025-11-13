@@ -1,0 +1,35 @@
+{
+  "name": "celo-quiz-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.6",
+    "@web3modal/wagmi": "^5.1.11",
+    "canvas-confetti": "^1.9.4",
+    "ethers": "^6.15.0",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.546.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "^7.9.4",
+    "use-sound": "^5.0.0",
+    "viem": "^2.18.8",
+    "wagmi": "^2.19.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.2",
+    "vite": "5.4.8"
+  }
+}
