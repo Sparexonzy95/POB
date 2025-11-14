@@ -1,4 +1,4 @@
-🏆  proof of brain
+🏆 proof of brain
 A blockchain-based quiz tournament platform built on Celo, featuring real-money tournaments, custom branding, and mobile-first design with MiniPay integration.
 🎯 Features
 
@@ -15,7 +15,6 @@ Prerequisites
 
 Python 3.10+
 Node.js 16+
-PostgreSQL 13+
 Celo wallet (MetaMask or MiniPay)
 
 Installation
