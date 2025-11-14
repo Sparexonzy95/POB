@@ -45,6 +45,9 @@ cp .env.example .env.local
 # Terminal 1: python manage.py runserver
 # Terminal 2: npm run dev
 Visit http://localhost:3000
+
+
+
 📁 Project Structure
 ├── backend/
 │   ├── quiz/
