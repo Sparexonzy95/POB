@@ -20,7 +20,7 @@ Celo wallet (MetaMask or MiniPay)
 
 Installation
 bash# Clone repository
-git clone https://github.com/yourusername/celo-quiz-tournament.git
+git clone https://github.com/yourusername/POB.git
 cd celo-quiz-tournament
 
 # Backend setup
@@ -73,17 +73,17 @@ DEBUG=True
 DATABASE_URL=postgresql://user:pass@localhost/quiz_db
 
 # Celo
-CELO_RPC=https://alfajores-forno.celo-testnet.org
-CELO_CHAIN_ID=44787
-TOURNAMENT_ADDRESS=0xYourContractAddress
-CUSD_ADDRESS=0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1
+CELO_RPC=https://forno.celo-sepolia.celo-testnet.org
+CELO_CHAIN_ID=11142220
+TOURNAMENT_ADDRESS=0x3d1b57db0f8dDE1C6E796d6542055F951195eBd4
+CUSD_ADDRESS=0xde9e4c3ce781b4ba68120d6261cbad65ce0ab00b
 HOUSE_ADDRESS=0xYourHouseWallet
 HOUSE_PK=your-private-key
 Frontend (.env.local)
 bashVITE_API_URL=http://localhost:8000/api
-VITE_CELO_CHAIN_ID=44787
-VITE_TOURNAMENT_ADDRESS=0xYourContractAddress
-VITE_CUSD_ADDRESS=0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1
+CELO_CHAIN_ID=11142220
+VITE_TOURNAMENT_ADDRESS=0x3d1b57db0f8dDE1C6E796d6542055F951195eBd4
+VITE_CUSD_ADDRESS=0xdE9e4C3ce781b4bA68120d6261cbad65ce0aB00b
 📚 API Quick Reference
 Tournaments
 bash# List tournaments
@@ -163,7 +163,7 @@ Tailwind CSS
 📞 Support
 
 Issues: GitHub Issues
-Email: support@example.com
+Email: sparexonzy95@gmail.com
 
 
 Built with ❤️ on Celo
